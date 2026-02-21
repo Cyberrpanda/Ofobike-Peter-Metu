@@ -278,40 +278,44 @@
     </section>
 
     <!-- Contact Section (Form + Info) -->
-    <section id="contact" class="py-5 fade-section">
-      <h2 class="section-title"><span class="text-dark">Get In</span> <span class="text-brand">Touch</span></h2>
-      <div class="row g-5">
-        <div class="col-md-6">
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="_replyto" required>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-brand w-100">Send Message</button>
-          </form>
-          <p class="text-muted small mt-3">* Your message will be sent to metuhofobike@gmail.com</p>
+<section id="contact" class="py-5 fade-section">
+  <h2 class="section-title"><span class="text-dark">Get In</span> <span class="text-brand">Touch</span></h2>
+  <div class="row g-5">
+    <div class="col-md-6">
+      <form id="demoContactForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
         </div>
-        <div class="col-md-6">
-          <div class="contact-info p-4 bg-light rounded-4">
-            <h5 class="text-brand fw-bold">Get in touch</h5>
-            <p><i class="fas fa-map-marker-alt text-brand me-2"></i> St Helens, United Kingdom</p>
-            <p><i class="fas fa-envelope text-brand me-2"></i> metuhofobike@gmail.com</p>
-            <p><i class="fas fa-phone text-brand me-2"></i> 07780288554</p>
-            <p><i class="fab fa-linkedin text-brand me-2"></i> <a href="#" class="text-decoration-none text-brand">LinkedIn Profile</a></p>
-            <hr>
-            <p class="small text-muted">Available for BA opportunities – let’s connect!</p>
-          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
         </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" id="formSubmitBtn" class="btn btn-brand w-100">Send Message</button>
+        <div id="formSuccessMessage" class="alert alert-success mt-3 d-none">
+          <i class="fas fa-check-circle me-2"></i> Thank you! Your message has been sent successfully.
+        </div>
+      </form>
+      <p class="text-muted small mt-3">* Demo form – no email is actually sent.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="contact-info p-4 bg-light rounded-4">
+        <h5 class="text-brand fw-bold">Get in touch</h5>
+        <p><i class="fas fa-map-marker-alt text-brand me-2"></i> St Helens, United Kingdom</p>
+        <p><i class="fas fa-envelope text-brand me-2"></i> metuhofobike@gmail.com</p>
+        <p><i class="fas fa-phone text-brand me-2"></i> 07780288554</p>
+        <p><i class="fab fa-linkedin text-brand me-2"></i> <a href="#" class="text-decoration-none text-brand">LinkedIn Profile</a></p>
+        <hr>
+        <p class="small text-muted">Available for remote BA opportunities – let’s connect!</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+    
   </main>
 
   <!-- Footer -->

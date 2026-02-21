@@ -78,3 +78,40 @@ document.addEventListener('DOMContentLoaded', function() {
   // 5. Set current year in footer
   document.getElementById('currentYear').textContent = new Date().getFullYear();
 });
+
+// Demo contact form simulation
+const demoForm = document.getElementById('demoContactForm');
+if (demoForm) {
+  demoForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const submitBtn = document.getElementById('formSubmitBtn');
+    const successMsg = document.getElementById('formSuccessMessage');
+    const originalText = submitBtn.innerHTML;
+
+    // Disable button and show loading
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+
+    // Hide any previous success message
+    successMsg.classList.add('d-none');
+
+    // Simulate network delay
+    setTimeout(() => {
+      // Show success message
+      successMsg.classList.remove('d-none');
+
+      // Reset button
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalText;
+
+      // Optionally clear the form
+      demoForm.reset();
+
+      // Hide success message after a few seconds (optional)
+      setTimeout(() => {
+        successMsg.classList.add('d-none');
+      }, 5000);
+    }, 2000); // 2-second delay
+  });
+}

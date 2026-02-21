@@ -221,3 +221,11 @@ body {
     font-size: 2rem;
   }
 }
+/* Form success message */
+#formSuccessMessage {
+  transition: opacity 0.3s ease;
+}
+.btn-brand:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
