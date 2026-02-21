@@ -1,0 +1,223 @@
+/* Custom styles – Ofobike Peter Metu portfolio */
+
+:root {
+  --brand: #1d3557;      /* primary dark */
+  --brand-light: #457b9d; /* optional light variant */
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  color: #212529;
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  font-weight: 700;
+  border-bottom: 4px solid var(--brand);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.text-brand {
+  color: var(--brand) !important;
+}
+.bg-brand {
+  background-color: var(--brand) !important;
+}
+.btn-brand {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+.btn-brand:hover {
+  background-color: #0f2a3f;
+  border-color: #0f2a3f;
+  color: #fff;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  background-color: var(--brand);
+  color: white;
+}
+.hero-circle {
+  width: 280px;
+  height: 280px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3);
+}
+.hero-circle span {
+  font-size: 5rem;
+  font-weight: 300;
+  color: var(--brand);
+  text-shadow: none;
+}
+
+/* ===== Core Competency Cards ===== */
+.competency-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border: 1px solid #e9ecef;
+}
+.competency-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 30px -12px rgba(29, 53, 87, 0.3);
+}
+.competency-card i {
+  color: var(--brand);
+}
+.competency-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #000;
+}
+
+/* ===== Experience Cards ===== */
+.exp-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-left: 5px solid var(--brand);
+  transition: all 0.3s ease;
+}
+.exp-card:hover {
+  box-shadow: 0 15px 30px rgba(29, 53, 87, 0.15);
+  transform: scale(1.01);
+}
+.exp-card h4 {
+  font-weight: 600;
+  color: #000;
+}
+.exp-card .badge {
+  background-color: var(--brand);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+.exp-card ul {
+  padding-left: 1.2rem;
+  color: #495057;
+}
+.exp-card li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Project Cards ===== */
+.project-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  border: 1px solid #f1f3f5;
+}
+.project-card:hover {
+  box-shadow: 0 20px 35px rgba(29, 53, 87, 0.2);
+  transform: translateY(-5px);
+}
+.project-card i {
+  color: var(--brand);
+}
+.project-card h4 {
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #000;
+}
+.project-card p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* ===== Progress Bars ===== */
+.progress {
+  height: 0.8rem;
+  border-radius: 2rem;
+  background-color: #e9ecef;
+}
+.progress-bar {
+  background-color: var(--brand);
+  border-radius: 2rem;
+}
+
+/* ===== Contact Info Box ===== */
+.contact-info {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+.contact-info a {
+  color: var(--brand);
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #0f2a3f !important; /* slightly darker than brand */
+}
+.footer a:hover {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+/* ===== Form Inputs ===== */
+.form-control:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.2rem rgba(29, 53, 87, 0.25);
+}
+
+/* ===== Navbar ===== */
+.navbar-brand {
+  color: #000;
+  font-size: 1.5rem;
+}
+.navbar-brand:hover {
+  color: var(--brand);
+}
+.nav-link {
+  color: #495057;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--brand) !important;
+}
+
+/* ===== Fade-in Animation ===== */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Responsive Tweaks ===== */
+@media (max-width: 768px) {
+  .hero-circle {
+    width: 220px;
+    height: 220px;
+    margin-top: 2rem;
+  }
+  .hero-circle span {
+    font-size: 4rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
